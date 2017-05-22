@@ -26,8 +26,8 @@ fi
 
 cd $PKG
 
-sed -i -r "s:/boot/syslinux:/$LIVEKITNAME/boot:" core/fs/iso9660/iso9660.c
-sed -i -r "s:/boot/syslinux:/$LIVEKITNAME/boot:" core/fs/lib/loadconfig.c
+sed -i -r "s:/boot/syslinux:/Boot/Loader:" core/fs/iso9660/iso9660.c
+sed -i -r "s:/boot/syslinux:/Boot/Loader:" core/fs/lib/loadconfig.c
 
 make \
 	${CC:+CC="$CC"}
