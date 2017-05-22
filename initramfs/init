@@ -9,11 +9,11 @@ export PATH=.:/:/usr/sbin:/usr/bin:/sbin:/bin
 
 transfer_initramfs
 
-MEMORY=/memory
-CHANGES=$MEMORY/snapshot
-UNION=$MEMORY/union
-DATAMNT=$MEMORY/storage
-BUNDLES=$MEMORY/bundles
+MEMORY=/System
+CHANGES=$MEMORY/Snapshot
+UNION=$MEMORY/Union
+DATAMNT=$MEMORY/Storage
+BUNDLES=$MEMORY/Bundle
 
 #header "Live Kit init <http://www.linux-live.org/>"
 header "Coffee Cup OS - Preview"
