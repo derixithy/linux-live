@@ -10,12 +10,13 @@ export PATH=.:/:/usr/sbin:/usr/bin:/sbin:/bin
 transfer_initramfs
 
 MEMORY=/memory
-CHANGES=$MEMORY/changes
+CHANGES=$MEMORY/snapshot
 UNION=$MEMORY/union
-DATAMNT=$MEMORY/data
+DATAMNT=$MEMORY/storage
 BUNDLES=$MEMORY/bundles
 
-header "Live Kit init <http://www.linux-live.org/>"
+#header "Live Kit init <http://www.linux-live.org/>"
+header "Coffee Cup OS - Preview"
 
 init_proc_sysfs
 
@@ -48,7 +49,7 @@ copy_rootcopy_content "$DATA" "$UNION"
 # create empty fstab
 fstab_create "$UNION"
                                                                                                                                                       debug_shell
-header "Live Kit done, starting $LIVEKITNAME"
+header "Construction done, starting $LIVEKITNAME"
 change_root "$UNION"
 
 header "!!ERROR occured, you shouldn't be here.!!"
